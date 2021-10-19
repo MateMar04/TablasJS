@@ -1,29 +1,38 @@
 <html>
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <span>
-        <div>
-            <input type="text" placeholder="Orden de Compra">
+    <div class="row">
+        <div class="col-md-5 container">
+            <div>
+                <input type="number" placeholder="Orden de Compra">
+            </div>
+            <div>
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div>
+                <input type="number" placeholder="Precio">
+            </div>
+            <div>
+                <button onclick="enviar()">ENVIAR</button>
+                <button onclick="imprimir()">IMPRIMIR</button>
+            </div>
         </div>
-        <div>
-            <input type="text" placeholder="Nombre">
+        <div class="col-md-5 container">
+            <table>
+                <th>Orden de Compra</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+            </table>
         </div>
-        <div>
-            <input type="text" placeholder="Precio">
-        </div>
-        <div>
-            <button>ENVIAR</button>
-            <button>IMPRIMIR</button>
-        </div>
-    </span>
-    <span>
-        
-    </span>
+    </div>
+
 </body>
 
 </html>
